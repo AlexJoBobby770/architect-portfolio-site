@@ -1,0 +1,156 @@
+:root {
+  --bg-main: #ffffff;
+  --bg-dark: #000000;
+  --text-main: #0d0606;
+  --text-light: #e5e5e5;
+  --border-light: #dddddd;
+  --max-width: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 5rem 1.5rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+nav h1 {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
+#home {
+  background: #111;
+  color: #f1f1f1;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+#home h2 {
+  font-size: 3.8rem;
+  max-width: 800px;
+}
+
+#home p {
+  font-size: 1.05rem;
+  color: #cfcfcf;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+h1, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  max-width: 680px;
+  color: #555;
+}
+
+#services article {
+  padding: 2.5rem 2rem;
+  border-left: 3px solid #111;
+  background: #fff;
+}
+
+#services article:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: var(--bg-dark);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.85rem;
+}
+section:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  #home h2 {
+    font-size: 2.2rem;
+  }
+}
